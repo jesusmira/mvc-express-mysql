@@ -1,0 +1,27 @@
+<br><br>
+<div class="col-lg-6 col-lg-offset-3">
+
+ <div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">Nuevo posit</h3>
+  </div>
+  <div class="panel-body">
+    <form method="POST" action="/posit/crear"  role="form">
+     <input type="hidden" name="IdTotal" id="IdTotal" class="form-control" value="{{datos}}">
+
+	<div class="form-group">
+		<label for="titulo">Titulo</label>
+		<input type="text" class="form-control" id="titulo" name="titulo" placeholder="Introduce un titulo">
+	</div>
+    <div class="form-group">
+		<label for="estado">Estado</label>
+		<input type="text" class="form-control" id="estado" name="estado" placeholder="Introduce un estado">
+	</div>
+
+
+	<button type="submit" class="btn btn-primary btn-success">Guardar</button>
+</form>
+
+  </div>
+</div>
+</div>

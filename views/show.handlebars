@@ -1,0 +1,25 @@
+<div class="col-lg-12">
+    <h1>Ejemplo de posit.</h1>
+    <h2>Ejemplo practico de uso de express mysql y handlebars</h2>
+    <a type="button" class="btn btn-primary btn-large" href="/posit/nuevo">Nuevo posit</a>
+    <br> <br>
+    <table class="table table-bordered table-hover table-responsive">
+        <thead>
+            <tr>
+                <th>Titulo</th>
+                <th>Estado</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody> {{#each rows}}
+            <tr>
+                <td>
+                    <p>{{this.Title}}</p>
+                </td>
+                <td>{{this.Status}}</td>
+                <td> <a type="button" class="btn btn-default" href="/posit/{{this.Id}}/editar">Editar</a>
+                    <a type="button" class="btn btn-danger" href="/posit/{{this.Id}}/preborrar">Borrar</a>
+                </td>
+            </tr> {{/each}} </tbody>
+    </table>
+</div>
